@@ -31,9 +31,9 @@ jobs:
       - name: Build the package
         run: pnpm run build
 
-      - name: Check for NPM token
+      - name: Set up npm authentication
         run: |
-          echo "NPM Token: ${{ secrets.NPM_TOKEN }}"
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
       - name: Publish to npm
         run: pnpm publish --no-git-checks
