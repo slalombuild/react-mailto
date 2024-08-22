@@ -6,21 +6,21 @@ on:
       - "**" # matches every branch
 
 jobs:
-  build-and-publish:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "18" # Specify your Node.js version
-          cache: "pnpm"
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 9.1.1
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
       - name: Install dependencies
         run: pnpm i
 
