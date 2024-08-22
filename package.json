@@ -23,6 +23,7 @@
     "jsr:verify": "pnpm dlx jsr publish --dry-run",
     "jsr:publish": "pnpm dlx jsr publish",
     "build": "microbundle-crl --no-compress --format modern,cjs",
+    "build:docs": "cd src/docs && pnpm build",
     "start": "microbundle-crl watch --no-compress --format modern,cjs"
   },
   "keywords": [],
