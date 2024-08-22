@@ -9,6 +9,9 @@ jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     environment: production
+    permissions:
+      contents: read
+      id-token: write # The OIDC ID token is used for authentication with JSR.
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -29,6 +32,9 @@ jobs:
         run: pnpm run build
 
       - name: Publish to npm
-        run: pnpm publish
+        run: pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish to jsr
+        run: pnpm jsr:publish
