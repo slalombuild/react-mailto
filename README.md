@@ -72,7 +72,7 @@ For more complex scenarios, such as including CC and BCC recipients, or enabling
 
 ```tsx
 import React from 'react';
-import { MailTo, MailToBody, MailToTrigger } from '@slalombuild/react-mailto';
+import { MailTo, MailToBody, MailToTrigger, MailToIndent, MailToBreak } from '@slalombuild/react-mailto';
 
 const App = () => (
   <MailTo
@@ -84,13 +84,33 @@ const App = () => (
   >
     <MailToTrigger>Invite to Meeting</MailToTrigger>
     <MailToBody>
-      Dear Team,
-      <br />
-      Please join us for a meeting next week.
-      <br />
-      Regards,
-      <br />
-      Your Name
+      Hello
+        <br />
+        World
+        <MailToIndent spacing={8}>Tabbed Content</MailToIndent>
+        <MailToBreak spacing={2} />
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>
+            <ul>
+              <li>Subitem 1</li>
+              <li>Subitem 2</li>
+              <li>
+                <ul>
+                  <li>Sub subitem 1</li>
+                  <li>Sub subitem 2</li>
+                  <li>
+                    <ul>
+                      <li>Sub sub subitem 1</li>
+                      <li>Sub sub subitem 2</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
     </MailToBody>
   </MailTo>
 );
