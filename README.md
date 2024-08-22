@@ -84,7 +84,7 @@ const App = () => (
   >
     <MailToTrigger>Invite to Meeting</MailToTrigger>
     <MailToBody>
-      Hello
+        Hello
         <br />
         World
         <MailToIndent spacing={8}>Tabbed Content</MailToIndent>
