@@ -3,7 +3,7 @@
 <!-- TODO: Uncomment once JSR works for JSX -->
 <!-- [![JSR](https://jsr.io/badges/@slalombuild/react-mailto)](https://jsr.io/@slalombuild/react-mailto) -->
 [![NPM Version](https://img.shields.io/npm/v/@slalombuild/react-mailto)](https://www.npmjs.com/package/@slalombuild/react-mailto)
-[![Demo](https://img.shields.io/badge/Demo-Visit%20Demo-blue)]([https://<username>.github.io/<repository>](https://slalombuild.github.io/react-mailto/))
+[![Demo](https://img.shields.io/badge/Demo-Visit%20Demo-blue)](https://slalombuild.github.io/react-mailto/)
 
 ## Overview
 
