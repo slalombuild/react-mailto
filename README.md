@@ -19,6 +19,10 @@ This package is ideal for developers who want to generate email links with rich 
 
 ## Installation
 
+```shell
+npm install react-mailto
+```
+
 <!-- TODO: Uncomment once JSR works for JSX -->
 <!-- Install the package via deno, npm, yarn, pnpm or bun: -->
 
@@ -42,7 +46,7 @@ To create a mailto link with a subject and body content, use the `MailTo` compon
 
 ```tsx
 import React from 'react';
-import { MailTo, MailToBody, MailToTrigger } from 'package-name';
+import { MailTo, MailToBody, MailToTrigger } from '@slalombuild/react-mailto';
 
 const App = () => (
   <MailTo to="example@example.com" subject="Hello World">
@@ -68,7 +72,7 @@ For more complex scenarios, such as including CC and BCC recipients, or enabling
 
 ```tsx
 import React from 'react';
-import { MailTo, MailToBody, MailToTrigger } from 'package-name';
+import { MailTo, MailToBody, MailToTrigger } from '@slalombuild/react-mailto';
 
 const App = () => (
   <MailTo
