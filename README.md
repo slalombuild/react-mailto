@@ -1,6 +1,7 @@
 # react-mailto
 
-[![JSR](https://jsr.io/badges/@slalombuild/react-mailto)](https://jsr.io/@slalombuild/react-mailto)
+<!-- TODO: Uncomment once JSR works for JSX -->
+<!-- [![JSR](https://jsr.io/badges/@slalombuild/react-mailto)](https://jsr.io/@slalombuild/react-mailto) -->
 [![NPM Version](https://img.shields.io/npm/v/@slalombuild/react-mailto)](https://www.npmjs.com/package/@slalombuild/react-mailto)
 
 ## Overview
@@ -17,9 +18,10 @@ This package is ideal for developers who want to generate email links with rich 
 
 ## Installation
 
-Install the package via deno, npm, yarn, pnpm or bun:
+<!-- TODO: Uncomment once JSR works for JSX -->
+<!-- Install the package via deno, npm, yarn, pnpm or bun: -->
 
-```sh
+<!-- ```sh
 deno add @slalombuild/react-mailto
 
 npx jsr add @slalombuild/react-mailto
@@ -29,7 +31,7 @@ yarn dlx jsr add @slalombuild/react-mailto
 pnpm dlx jsr add @slalombuild/react-mailto
 
 bunx jsr add @slalombuild/react-mailto
-```
+``` -->
 
 ## Usage
 
