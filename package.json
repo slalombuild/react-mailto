@@ -1,0 +1,44 @@
+{
+  "name": "@slalombuild/react-mailto",
+  "version": "0.2.6",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "description": "react-mailto is a React component library designed to simplify the creation of mailto links with customizable headers and body content. This package allows you to generate fully-featured email links with options for specifying recipients, subject lines, CC/BCC fields, and multiline email bodies. It includes components for rendering clickable email triggers and supports obfuscation to protect email addresses from scraping.",
+  "source": "src/index.tsx",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.modern.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "vitest --watch",
+    "format": "prettier --write .",
+    "jsr:verify": "pnpm dlx jsr publish --dry-run",
+    "jsr:publish": "pnpm dlx jsr publish",
+    "build": "microbundle-crl --no-compress --format modern,cjs",
+    "start": "microbundle-crl watch --no-compress --format modern,cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.0.0",
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18.3.0",
+    "microbundle-crl": "^0.13.11",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  }
+}

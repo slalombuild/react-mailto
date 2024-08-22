@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+# Except the dist folder
+!dist/
+
+# Ensure node_modules are ignored, just in case
+node_modules/

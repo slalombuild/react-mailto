@@ -1,0 +1,17 @@
+{
+  "name": "@slalombuild/react-mailto",
+  "version": "0.2.6",
+  "exports": {
+    ".": "./src/index.tsx"
+  },
+  "publish": {
+    "include": [
+      "README.md",
+      "LICENSE",
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "jsr.json"
+    ],
+    "exclude": ["**/*.test.ts", "**/*.test.tsx"]
+  }
+}
