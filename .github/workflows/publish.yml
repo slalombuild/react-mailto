@@ -31,6 +31,10 @@ jobs:
       - name: Build the package
         run: pnpm run build
 
+      - name: Check for NPM token
+        run: |
+          echo "NPM Token: ${{ secrets.NPM_TOKEN }}"
+
       - name: Publish to npm
         run: pnpm publish --no-git-checks
         env:
